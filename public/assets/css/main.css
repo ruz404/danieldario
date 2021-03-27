@@ -73,6 +73,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.yellow-txt{
+    color: #F0BE0C !important;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2090,6 +2094,13 @@ input, select, textarea {
 		.icon.style3 {
 			color: #76ddff;
 		}
+		.icon.styleW {
+			color: #ffffff;
+			/* background-color: #fff; */
+		}
+		.icon.styleY {
+			color: #F0BE0C;
+		}
 
 		.biodescription{
 			flex: 70%;
@@ -2623,7 +2634,7 @@ input, select, textarea {
 
 			.features li:before {
 				display: block;
-				color: #00ffcc;
+				color: #F0BE0C;
 				position: absolute;
 				left: 1.75em;
 				top: 2.75em;
@@ -2696,12 +2707,27 @@ input, select, textarea {
 			-ms-order: 1;
 			order: 1;
 			border-radius: 0;
-			width: 40%;
+			width: 50%;
 		}
 
 			.spotlight .image img {
 				border-radius: 0;
 				width: 100%;
+			}
+
+		.spotlight .map {
+			-moz-order: 1;
+			-webkit-order: 1;
+			-ms-order: 1;
+			order: 1;
+			border-radius: 0;
+			width: 50%;
+			height:100%;
+		}
+
+			.spotlight .map iframe{
+				width: 100%;
+				height: 30rem;
 			}
 
 		.spotlight .content {
@@ -2713,6 +2739,72 @@ input, select, textarea {
 			max-width: 48em;
 			width: 60%;
 		}
+
+		.spotlight .gallery{
+			position: relative;
+		}
+
+		.spotlight .mySlides img{
+			vertical-align: middle;
+		}
+
+		/* Hide the images by default */
+			.mySlides {
+				display: none;
+			}
+
+			.mySlides img{
+				width: 100%;
+			}
+			
+			/* Add a pointer when hovering over the thumbnail images */
+			.cursor {
+				cursor: pointer;
+			}
+			
+			/* Next & previous buttons */
+			.prev,
+			.next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				padding: 16px;
+				margin-top: -50px;
+				color: white;
+				font-weight: bold;
+				font-size: 20px;
+				border-radius: 0 3px 3px 0;
+				user-select: none;
+				-webkit-user-select: none;
+			}
+
+			/* Position the "prev button" to the right */
+			.prev {
+				left: 0;
+				/* border-radius: 3px 0 0 3px; */
+			}
+			
+			/* Position the "next button" to the right */
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+			
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover,
+			.next:hover {
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+			
+			/* Number text (1/3 etc) */
+			.numbertext {
+				color: #f2f2f2;
+				font-size: 12px;
+				padding: 8px 12px;
+				position: absolute;
+				top: 0;
+			}
 
 		.spotlight:nth-child(2n) {
 			-moz-flex-direction: row-reverse;
@@ -2771,6 +2863,35 @@ input, select, textarea {
 				width: 55%;
 			}
 
+			.spotlight .map {
+				-moz-order: 1;
+				-webkit-order: 1;
+				-ms-order: 1;
+				order: 1;
+				border-radius: 0;
+				width: 100%;
+				height:100%;
+			}
+	
+				.spotlight .map iframe{
+					width: 100%;
+					/* height: 30rem; */
+				}
+
+			.inner .video {
+				-moz-order: 1;
+				-webkit-order: 1;
+				-ms-order: 1;
+				order: 1;
+				border-radius: 0;
+				width: 100%;
+				height:100%;
+			}
+	
+				.inner .video iframe{
+					width: 100%;
+					/* height: 30rem; */
+				}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3006,6 +3127,11 @@ input, select, textarea {
 			color: #d3d4e4;
 		}
 
+		.wrapper.styleW {
+			background-color: #fff;
+			color: #2C4260;
+		}
+
 			.wrapper.style3 strong, .wrapper.style3 b {
 				color: #ffffff;
 			}
@@ -3151,6 +3277,47 @@ input, select, textarea {
 				.wrapper.style3 .button:active {
 					background-color: rgba(255, 255, 255, 0.2);
 				}
+
+				.wrapper.styleW {
+					background-color: #fff;
+					color: #2C4260;
+				}
+		
+					.wrapper.styleW strong, .wrapper.styleW b {
+						color: #2C4260;
+					}
+		
+					.wrapper.styleW h2, .wrapper.styleW h3, .wrapper.styleW h4, .wrapper.styleW h5, .wrapper.styleW h6 {
+						color: #2C4260;
+					}
+		
+					.wrapper.styleW hr {
+						border-color: rgba(0, 0, 0, 0.125);
+					}
+		
+					.wrapper.styleW blockquote {
+						border-color: rgba(0, 0, 0, 0.125);
+					}
+		
+					.wrapper.styleW code {
+						background: rgba(255, 255, 255, 0.075);
+					}
+		
+					.wrapper.styleW header p {
+						color: #21344e;
+					}
+		
+					.wrapper.styleW header.major h2, .wrapper.styleW header.major h3, .wrapper.styleW header.major h4, .wrapper.styleW header.major h5, .wrapper.styleW header.major h6 {
+						border-color: rgba(0, 0, 0, 0.125);
+					}
+		
+					.wrapper.styleW header.major p {
+						color: #21344e;
+					}
+		
+					.wrapper.styleW label {
+						color: #2C4260;
+					}
 
 			@media screen and (max-width: 736px) {
 
