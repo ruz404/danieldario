@@ -4074,6 +4074,12 @@ input, select, textarea {
 		text-align: center;
 	}
 
+		#main > header > .social-top{
+			margin: 0;
+			top: 70px;
+			position: absolute;
+		}
+
 		#main > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
@@ -4094,6 +4100,12 @@ input, select, textarea {
 
 			#main > header {
 				padding: 10em 0 8em 0 ;
+			}
+
+			#main > header > .social-top{
+				margin-left: 5%;
+				top: 70px;
+				position: absolute;
 			}
 
 		}
